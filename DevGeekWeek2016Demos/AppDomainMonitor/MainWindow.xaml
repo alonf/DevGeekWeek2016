@@ -1,0 +1,31 @@
+﻿<Window x:Class="AppDomainMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AppDomain Monitor" Height="350" Width="525"
+        FontSize="20">
+   <StackPanel Orientation="Vertical">
+        <Button Margin="6" IsEnabled="{Binding MonitorIsNotEnabled, Mode=OneWay}" Click="EnableAppDomainMonitoring" Content="Enable AppDomain Monitoring"/>
+        <StackPanel Orientation="Horizontal" Margin="6">
+            <Label Content="Survived Process Memory Size:"/>
+            <TextBox IsReadOnly="True" VerticalAlignment="Center" Text="{Binding MonitoringSurvivedProcessMemorySize, Mode=OneWay}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="6">
+            <Label Content="Total Processor Time:"/>
+            <TextBox IsReadOnly="True" VerticalAlignment="Center" Text="{Binding MonitoringTotalProcessorTime, Mode=OneWay}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="6">
+            <Label Content="Survived Memory Size:"/>
+            <TextBox IsReadOnly="True" VerticalAlignment="Center" Text="{Binding MonitoringSurvivedMemorySize, Mode=OneWay}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="6">
+            <Label Content="Total Allocated Memory Size:"/>
+            <TextBox IsReadOnly="True" VerticalAlignment="Center" Text="{Binding MonitoringTotalAllocatedMemorySize, Mode=OneWay}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="6">
+            <Button Margin="0,0,10,0" Click="ConsumeMemory" Content="Consume Memory"/>
+            <Button Margin="0,0,10,0" Click="FreeMemory" Content="Free Memory"/>
+            <Button Margin="10,0,0,0" Click="ConsumeCPUTime" Content="Consume CPU Time"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>
