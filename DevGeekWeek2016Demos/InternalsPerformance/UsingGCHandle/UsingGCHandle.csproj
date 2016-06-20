@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{79E00DCD-BFE7-471C-ACA3-E17F37CBCFE6}</ProjectGuid>
+    <ProjectGuid>{1B5ED9E3-5097-4671-9C15-74847A8F59FE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AsyncAwaitDemo</RootNamespace>
-    <AssemblyName>AsyncAwaitDemo</AssemblyName>
+    <RootNamespace>UsingGCHandle</RootNamespace>
+    <AssemblyName>UsingGCHandle</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

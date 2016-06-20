@@ -185,8 +185,8 @@ namespace TDFKinectGreenScreen.Model.TDFDatablocks
                                          ImageSource = _playerOpacityMaskImage,
                                          Stretch = Stretch.UniformToFill,
                                          TileMode = TileMode.None,
-                                         AlignmentX = AlignmentX.Left,
-                                         AlignmentY = AlignmentY.Top,
+                                         AlignmentX = AlignmentX.Center,
+                                         AlignmentY = AlignmentY.Center,
                                          Opacity = 1,
                                      };
 
@@ -195,8 +195,8 @@ namespace TDFKinectGreenScreen.Model.TDFDatablocks
                                            ImageSource = _colorBitmap,
                                            Stretch = Stretch.UniformToFill,
                                            TileMode = TileMode.None,
-                                           AlignmentX = AlignmentX.Left,
-                                           AlignmentY = AlignmentY.Top,
+                                           AlignmentX = AlignmentX.Center,
+                                           AlignmentY = AlignmentY.Center,
                                            Opacity = 1,
                                        };
 
